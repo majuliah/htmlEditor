@@ -11,5 +11,16 @@ namespace HTMLeditor
             Console.ForegroundColor = ConsoleColor.Gray;
             
         }
+
+        public static void DrawScreen()
+        {
+            
+            for (int i = 0; i <= 30; i++)
+                Console.Write($"-");
+            Console.Write($"\n");
+            
+            
+            
+        }
     }
 }
