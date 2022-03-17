@@ -10,6 +10,11 @@ namespace HTMLeditor
             Console.BackgroundColor = ConsoleColor.DarkBlue;
             Console.ForegroundColor = ConsoleColor.Gray;
             
+            DrawScreen();
+            WriteOption();
+
+            short option = short.Parse(Console.ReadLine());
+
         }
 
         public static void DrawScreen()
@@ -40,7 +45,23 @@ namespace HTMLeditor
             
             
         }
-        
-        
+
+        public static void WriteOption()
+        {
+            Console.SetCursorPosition(3,2);
+            Console.WriteLine($"HTML EDITOR");
+            Console.SetCursorPosition(3,4);
+            Console.WriteLine($"Select an option");
+            Console.SetCursorPosition(3,6);
+            Console.WriteLine($"1 - New file");
+            Console.SetCursorPosition(3,7);
+            Console.WriteLine($"2 - Open");
+            Console.SetCursorPosition(3,9);
+            Console.WriteLine($"0 - Out");
+            Console.SetCursorPosition(3,10);
+            Console.WriteLine($"Option: ");
+            
+            
+        }
     }
 }
