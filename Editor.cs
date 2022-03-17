@@ -29,6 +29,8 @@ namespace HTMLeditor
             } while (Console.ReadKey().Key != ConsoleKey.DownArrow);
             
             Console.WriteLine($"-- ***************** --");
+            Console.WriteLine($"Do you want to save file?");
+            Viewer.Show(file.ToString());
             //implementar se ele deseja ou não salvar o arquivo :)
         }
     }
