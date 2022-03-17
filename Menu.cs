@@ -14,13 +14,33 @@ namespace HTMLeditor
 
         public static void DrawScreen()
         {
-            
+            Console.WriteLine($"+");
             for (int i = 0; i <= 30; i++)
                 Console.Write($"-");
+            Console.WriteLine($"+");
             Console.Write($"\n");
+
+            for (int lines = 0; lines <= 10; lines++)
+            {
+                Console.WriteLine($"|");
+                for (int i = 0; i <= 30; i++)
+                    Console.Write($" ");
+                Console.Write($"|");
+                Console.WriteLine($"\n");
+                
+                Console.WriteLine($"+");
+                for (int i = 0; i <= 30; i++)
+                    Console.Write($"-");
+                Console.WriteLine($"+");
+                Console.Write($"\n");
+                
+                //create a function to improve the code quality
+            }
             
             
             
         }
+        
+        
     }
 }
